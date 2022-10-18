@@ -1,0 +1,246 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    background: url("../images/background_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.blur {
+    background: rgba(0, 0, 0, 0.2) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.intro_title {
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.intro_suptitle {
+    color: white;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header_logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+.header_logo a {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.header_nav {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.header_nav_link {
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    transition: color .1s linear;
+}
+
+.header_nav_link:hover {
+    /* color: black; */
+    color: #130d27;
+    font-weight: 700;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.shop_block {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.shop_filter {
+    width: 25%;
+}
+
+.shop_market {
+    position: relative;
+    width: 75%;
+}
+
+.name_block {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 20px;
+}
+
+.category_name {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 20px;
+}
+
+.input_checkboxes {
+    display: flex;
+    align-items: center;
+    margin: auto 10%;
+}
+
+.input_checkboxes span {
+    font-size: 20px;
+    color: white;
+}
+
+.checkboxes {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+
+.product_block {
+    display: inline-block;
+    position: relative;
+    margin: 30px 40px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid white;
+}
+
+.product_photo {
+    background-image: url('../images/1ts.png');
+    background-size: 190px;
+    background-position: -18px -18px;
+    margin: 10px 50px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.prod_info {
+    margin: 10px;
+    height: 50px;
+}
+
+.prod_info span {
+    color: white;
+    font-size: 17px;
+}
+
+.sale_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.sale_block span {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+.butt_sale {
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid white;
+    text-align: center;
+    transition: background .1s linear;
+}
+
+.butt_sale span {
+    margin: 0;
+    font-size: 20px;
+    transition: color .1s linear;
+}
+
+.butt_sale:hover {
+    background: white;
+}
+
+.butt_sale:hover span {
+    color: #130d27;
+}
